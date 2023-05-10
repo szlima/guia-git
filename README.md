@@ -25,3 +25,17 @@ git add --all //igual ao comando acima
 ```
 git add -A //igual ao comando acima
 ```
+
+#### **Removendo arquivos**
+
+A remoção de arquivos da área de *staging* é feita com o comando ``rm`` junto com o parâmetro ``--cached``. Utilize, também, a *flag* ``-r`` junto com o seletor ``.`` caso seja necessário remover tudo do *staging*.
+
+```
+git rm --cached tutorial.txt
+```
+```
+git rm --cached tutorial.txt index.html estilo.css
+```
+```
+git rm --cached -r .  //remove todos os arquivos
+```
