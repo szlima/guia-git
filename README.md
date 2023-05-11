@@ -39,3 +39,17 @@ git rm --cached tutorial.txt index.html estilo.css
 ```
 git rm --cached -r .  //remove todos os arquivos
 ```
+
+#### **Desfazendo modificações**
+
+Para desfazer as últimas mudanças de arquivos monitorados e fazê-los voltar ao seu último estado de atualização, utilize o comando ```checkout```. 
+
+```
+git checkout tutorial.txt
+```
+```
+git checkout tutorial.txt index.html estilo.css
+```
+```
+git checkout . 
+```
