@@ -62,3 +62,18 @@ No decorrer de um projeto os arquivos vão sendo alterados. Arquivos monitorados
 
 Todo *commit* possui um identificador, um autor e o momento em que foi realizado. Seu hash de identificação é exclusivo, um código SHA-1, e este ID também possui uma versão reduzida com 7 caracteres.
 
+#### **Realizando _commits_**
+
+Utiliza-se o comando ``commit`` para realizar esta ação, ele é representado por uma mensagem através da *flag* ``-m``.
+
+```
+git commit -m "Mensagem que descreve o commit"
+```
+
+Também pode-se incluir a *flag* ``-a``. Esta ação inclui automaticamente todos os arquivos monitorados modificados, mesmo aqueles que não estavam na área de *staging*.
+
+```
+git commit -a -m "Mensagem que descreve o commit"
+```
+
+
