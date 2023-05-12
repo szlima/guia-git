@@ -76,4 +76,17 @@ Também pode-se incluir a *flag* ``-a``. Esta ação inclui automaticamente todo
 git commit -a -m "Mensagem que descreve o commit"
 ```
 
+## Manipulando arquivos
 
+### Ignorando arquivos
+
+Ao criar na raíz do repositório um arquivo chamado **.gitignore**, especifica-se o que deve ser ignorado pelo Git. Arquivos específicos, com uma determinada extensão ou até mesmo o próprio arquivo .gitignore não serão incluídos nas atualizações do projeto. 
+
+O exemplo abaixo mostra a escrita de um caso em que seriam ignorados o arquivo tutorial.txt, tudo o que possui a extensão .log, a pasta senhas e o próprio .gitignore.
+
+```
+tutorial.txt
+*.log
+senhas/
+.gitignore
+```
