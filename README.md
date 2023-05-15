@@ -102,3 +102,31 @@ git mv antes.txt depois.txt
 git mv tutorial.txt textos/tutorial.txt
 ```
 
+### Excluindo arquivos
+
+O já conhecido comando ``rm`` também remove definitivamente arquivos monitorados do projeto. Para executar a operação para todos utilize a *flag* ``-r`` junto com o seletor de todos os arquivos ``.``.
+
+* Para arquivos não modificados utilize apenas ``rm``. 
+
+```
+git rm tutorial.txt
+```
+```
+git rm tutorial.txt index.html estilo.css
+```
+```
+git rm -r . //remove todos os arquivos
+```
+
+* Para arquivos modificados utilize, também, a *flag* ``-f``.
+
+```
+git rm -f tutorial.txt
+```
+```
+git rm -f tutorial.txt index.html estilo.css
+```
+```
+git rm -f -r . //remove todos os arquivos
+```
+
