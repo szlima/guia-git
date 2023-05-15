@@ -90,3 +90,15 @@ tutorial.txt
 senhas/
 .gitignore
 ```
+
+### Renomeando arquivos
+
+Para renomear um arquivo, ou mover ele para outra pasta, utilize o comando ``mv``.
+
+```
+git mv antes.txt depois.txt
+```
+```
+git mv tutorial.txt textos/tutorial.txt
+```
+
