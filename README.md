@@ -130,3 +130,45 @@ git rm -f tutorial.txt index.html estilo.css
 git rm -f -r . //remove todos os arquivos
 ```
 
+### Analisando mudanças em arquivos
+
+Todas as alterações em arquivos monitorados podem ser visualizadas através do comando ``diff``. De acordo com os casos abaixo, quando utilizado o comando com o nome de um ou mais arquivos serão exibidas apenas as diferenças referentes a este(s) arquivo(s). As modificações são apresentadas de modo que uma versão é assinalada pelo caractere '-' e outra pelo caractere '+'.
+
+* Executando o comando sem *flags*, são apresentadas as diferenças entre o diretório de trabalho e a área de *staging*. Ou seja, mostra-se as alterações dos arquivos que não foram incluídas no *staging*.
+
+```
+git diff 
+```
+```
+git diff tutorial.txt 
+```
+```
+git diff tutorial.txt index.html 
+```
+
+* Utilizando o comando ``diff`` com o parâmetro ``--cached`` ou ``--staged``, são apresentadas as diferenças entre o que já está no *staging* e o *HEAD*.
+
+```
+git diff --cached
+```
+```
+git diff --staged
+```
+```
+git diff --staged tutorial.txt 
+```
+```
+git diff --staged tutorial.txt index.html 
+```
+
+* Aplicando o comando ``diff`` no *HEAD*, são apresentadas todas mudanças dos arquivos com relação ao último *commit*.
+
+```
+git diff HEAD
+```
+```
+git diff HEAD tutorial.txt 
+```
+```
+git diff HEAD tutorial.txt index.html 
+```
