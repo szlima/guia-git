@@ -180,3 +180,13 @@ Repositórios Git iniciam com uma linha padrão de desenvolvimento. A partir des
 A *branch* padrão é denominada como base/mestra/principal. O GitHub a nomeia como *main* em repositórios novos. 
 
 Novas *branches* podem ser criadas para isolar o desenvolvimento de diferentes funcionalidades sem afetar o código já testado e estável. Assim, em uma parte separada, é possível desenvolver recursos (*features*) ou corrigir erros com segurança.
+
+### Criando uma *branch*
+
+Uma *branch* nova é criada a partir de uma *branch* já existente, normalmente esta *branch* de referência é a padrão. A nova ramificação inicia como uma cópia da outra e pode ser modificada de forma independente de todo o resto do projeto. 
+
+O comando a seguir cria uma *branch* a partir da que está selecionada no momento. 
+
+```
+git branch ramo_1
+```
