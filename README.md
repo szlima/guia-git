@@ -190,3 +190,12 @@ O comando a seguir cria uma *branch* a partir da que está selecionada no moment
 ```
 git branch ramo_1
 ```
+
+### Visualizando *branches*
+
+Executando apenas o comando ```branch``` é possível listar os nomes das *branches* existentes. 
+
+```
+git branch
+```
+
