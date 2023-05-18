@@ -199,3 +199,19 @@ Executando apenas o comando ```branch``` é possível listar os nomes das *branc
 git branch
 ```
 
+### Excluindo uma *branch*
+
+Para deletar *branches*, utiliza-se a *flag* ```-d``` ou ```--delete```. Normalmente, *branches* não são apagadas para que seja mantido um histórico de desenvolvimento.
+
+```
+git branch -d ramo_1
+```
+```
+git branch --delete ramo_1
+```
+```
+git branch -d ramo_1 ramo_2 ramo_3
+```
+```
+git branch --delete ramo_1 ramo_2 ramo_3
+```
