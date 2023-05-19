@@ -215,3 +215,17 @@ git branch -d ramo_1 ramo_2 ramo_3
 ```
 git branch --delete ramo_1 ramo_2 ramo_3
 ```
+
+### Trocando de *branch*
+
+* Para sair da *branch* atual e selecionar outra já existente utilize o comando ``checkout``.
+
+```
+git checkout ramo_1
+```
+
+* Para criar uma *branch* e já selecioná-la utilize, também, a *flag* ``-b``.
+
+```
+git checkout -b ramo_1
+```
