@@ -229,3 +229,13 @@ git checkout ramo_1
 ```
 git checkout -b ramo_1
 ```
+
+### Renomeando uma *branch*
+
+Para renomear uma *branch*, selecione-a e utilize o comando ``branch`` com a *flag* ``-M``. 
+
+Anteriormente, o GitHub chamava a *branch* padrão de *master*. Agora, a nomenclatura oficial é *main*. Então, pode ser necessário renomeá-la.
+
+```
+git branch -M main
+```
