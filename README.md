@@ -239,3 +239,11 @@ Anteriormente, o GitHub chamava a *branch* padrão de *master*. Agora, a nomencl
 ```
 git branch -M main
 ```
+
+### Juntando *branches*
+
+Utilize o comando ``merge`` para juntar a *branch* especificada com a selecionada.
+
+```
+git merge main
+```
