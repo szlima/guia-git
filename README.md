@@ -247,3 +247,11 @@ Utilize o comando ``merge`` para juntar a *branch* especificada com a selecionad
 ```
 git merge main
 ```
+
+### Comparando *branches*
+
+Diferenças entre duas *branches* podem ser visualizadas com o já conhecido comando ``diff``.
+
+```
+git diff ramo_1 ramo_2
+```
