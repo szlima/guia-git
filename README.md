@@ -255,3 +255,62 @@ Diferenças entre duas *branches* podem ser visualizadas com o já conhecido com
 ```
 git diff ramo_1 ramo_2
 ```
+
+### Verificando o histórico
+
+É possível visualizar o histórico de *commits* de uma *branch* através do comando ``log``. *Flags* podem ser utilizadas para filtrar a lista exibida, a seguir serão apresentadas algumas delas.
+
+```
+git log
+```
+
+* Exibição dos **n** *commits* mais recentes
+
+A *flag* ``-n`` define a quantidade específica de *commits* a ser retornada
+
+```
+git log -n 4 //retorna os 4 últimos commits
+```
+
+* Exibição dos *commits* escritos por alguém específico
+
+Para filtrar a lista exibida por quem escreveu, use o *parâmetro* ``--author``.
+
+```
+git log --author=fulano //retorna os commits feitos por "fulano"
+```
+
+* Exibição dos *commits* que afetam um arquivo específico
+
+Utilize ``--`` para especificar os arquivos que sofreram alterações em *commits*.
+
+```
+git log -- tutorial.txt
+```
+```
+git log -- tutorial.txt index.html estilo.css
+```
+
+* Exibindo apenas o assunto da mensagem dos *commits* 
+
+O parâmetro ``--oneline`` especifica que o histórico exibirá apenas o ID do *commit* junto com a primeira linha da mensagem associada a ele.
+
+```
+git log --oneline
+```
+
+* Exibição resumida dos *commits*
+
+Para exibir um ``log`` de forma resumida, use o comando ``shortlog`` ao invés de ``log``. A lista de *commits* já feitos será agrupada por autor, exibindo o assunto da mensagem dos *commits* em ordem cronológica começando pelo mais antigo.
+
+```
+git shortlog
+```
+
+* Exibindo os *commits* de todas as *branches*
+
+O parâmetro ``--all`` permite visualizar o histórico de *commits* de todas as *branches*. Utilize, também, ``--graph`` para uma melhor leitura.
+
+```
+git log --all --graph
+```
