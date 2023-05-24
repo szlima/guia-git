@@ -319,4 +319,4 @@ git log --all --graph
 
 Existem comandos que possibilitam uma *branch* voltar a um estado de acordo com um *commit* especificado.
  
-A especificação do *commit* é feita através do seu ID. Para *commits* recentes também pode-se usar a referência HEAD ou HEAD~n (Por exemplo, HEAD~1 é o penúltimo *commit* e HEAD~2 é o antepenúltimo).
+A especificação do *commit* é feita através do seu ID. Para *commits* recentes também pode-se usar a referência HEAD ou HEAD\~n (Por exemplo, HEAD\~1 é o penúltimo *commit* e HEAD\~2 é o antepenúltimo).
