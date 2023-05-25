@@ -336,3 +336,52 @@ git revert HEAD --no-edit
 ```
 git revert 9a9add8
 ```
+
+#### **Desfazendo _commits_ alterando o histórico**
+
+O comando ``git reset`` traz a *branch* para um estado anterior sem fazer um novo *commit*. Todo *commit* posterior ao *commit* especificado é descartado.
+
+É preciso cautela com o uso deste comando pois ele modifica o histórico da *branch*. Seu uso é recomendado para desfazer *commits* que estão apenas no repositório local. 
+
+Apesar dos *commits* desaparecerem do histórico, eles não são removidos do Git. Quando se conhece o ID de algum já apagado é possível aplicar o ``reset`` nele. Tais *commits* que não estão no histórico são excluidos permanentemente após a execução do coletor de lixo interno do Git, que é executado por padrão a cada 30 dias.
+
+Existem três *flags* que definem como o comando será executado: ``--soft``, ``--mixed`` e ``--hard``. Omitindo-se o parâmetro e a referência do *commit* são definidos implicitamente ``--mixed`` e HEAD, respectivamente.
+
+* O parâmetro ``--soft`` mantém as alterações do diretório de trabalho e as pendências da área de *staging*. Deste modo, apenas o histórico de *commits* é redefinido. 
+
+```
+git reset --soft 9a9add8
+```
+```
+git reset --soft HEAD
+```
+```
+git reset --soft //igual ao comando acima
+```
+
+* O parâmetro ``--mixed`` corresponde a execução padrão do comando ``reset``. As pendências da área de *staging* são transferidas para o diretório de trabalho como alterações.
+
+```
+git reset --mixed 9a9add8
+```
+```
+git reset 9a9add8 //igual ao comando acima
+```
+```
+git reset --mixed HEAD
+```
+```
+git reset //igual ao comando acima
+```
+
+* Com o parâmetro ``--hard``, as alterações do diretório de trabalho e as pendências da área de *staging* são apagadas.
+
+```
+git reset --hard 9a9add8
+```
+```
+git reset --hard HEAD
+```
+```
+git reset --hard  //igual ao comando acima
+```
