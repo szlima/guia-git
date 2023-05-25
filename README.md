@@ -320,3 +320,19 @@ git log --all --graph
 Existem comandos que possibilitam uma *branch* voltar a um estado de acordo com um *commit* especificado.
  
 A especificação do *commit* é feita através do seu ID. Para *commits* recentes também pode-se usar a referência HEAD ou HEAD\~n (Por exemplo, HEAD\~1 é o penúltimo *commit* e HEAD\~2 é o antepenúltimo).
+
+#### **Desfazendo _commits_ mantendo o histórico**
+
+Com o comando ``revert``, as alterações posteriores ao *commit* especificado são invertidas, e gera-se um novo *commit* representando o estado anterior ao especificado. Deste modo, o histórico permanece intacto, nada é apagado. Seu uso é recomendado quando deseja-se desfazer alterações que já estão no repositório remoto, para não afetar outras tarefas em desenvolvimento. 
+
+Utilizando o parâmetro ``--no-edit`` pula-se a edição da mensagem do *commit* e a padrão é adicionada.
+
+```
+git revert HEAD
+```
+```
+git revert HEAD --no-edit
+```
+```
+git revert 9a9add8
+```
