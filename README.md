@@ -22,6 +22,17 @@ Este comando exibe os arquivos novos e os monitorados com modificações. São d
 git status
 ```
 
+A seguir são apresentados os estados de arquivos no Git.
+
+* Não monitorado (*untracked*): Arquivo novo que ainda não foi adicionado ao gerenciamento do Git.
+
+* Adicionado (*added*): Arquivo novo que foi incluído na área de *staging*. Após o *commit* passará a ser monitorado.
+
+* Modificado (*modified*): Arquivo monitorado que sofreu alterações.
+
+* Preparado (*staged*): Arquivo monitorado que sofreu alterações e foi adicionado a área de *staging*.
+
+* Atualizado (*comitted*): Arquivo que foi incluído num *commit* e está atualizado de acordo com o *HEAD*.
 
 ## Comandos básicos
 
