@@ -12,6 +12,16 @@ Um repositório Git é como uma árvore de *commits*, onde cada um aponta para o
 
 * **_HEAD_:** ponteiro para a referência da *branch* selecionada, tal como é um ponteiro para o último *commit* feito naquela *branch*. Portanto, *HEAD* representa o estado definido pelo último *commit* do histórico.
 
+### Verificando o estado das três áreas
+
+O comando ``git status`` apresenta a situação dos arquivos com relação a estas áreas. Quando não existem mudanças significa que as três áreas estão iguais. Assim, toda vez que a *branch* está atualizada quer dizer que os arquivos no diretório de trabalho e na área de *staging* estão iguais ao estado do *HEAD*.
+
+Este comando exibe os arquivos novos e os monitorados com modificações. São descritos aqueles que já estão incluídos no *staging* e os que não estão.
+
+```
+git status
+```
+
 
 ## Comandos básicos
 
