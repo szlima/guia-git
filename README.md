@@ -419,3 +419,14 @@ git reset --hard HEAD
 ```
 git reset --hard  //igual ao comando acima
 ```
+
+## Utilizando repositórios remotos
+
+Um repositório remoto corresponde a uma versão do projeto local que está hospedada em uma rede. Desta forma, um trabalho pode ser compartilhado entre um time via Internet, por exemplo. Cada membro pode ter uma cópia local e independente, esta pode ser alterada e ter suas mudanças enviadas para a versão remota.
+
+A comunicação entre os repositórios local e remoto é feita através de uma conexão que é definida localmente. Esta conexão é nomeada e cria-se na máquina local um repositório que é como um espelho do remoto.
+
+*Origin* é um nome padrão para uma conexão remota. Porém, caso exista mais de um remoto vinculado ao repositório local é importante nomeá-los de forma autoexplicativa.
+
+Quando um projeto é carregado via ``git clone``, cria-se automaticamente um remoto chamado *origin*, cuja conexão direciona para o repositório clonado.
+
