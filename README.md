@@ -430,3 +430,12 @@ A comunicação entre os repositórios local e remoto é feita através de uma c
 
 Quando um projeto é carregado via ``git clone``, cria-se automaticamente um remoto chamado *origin*, cuja conexão direciona para o repositório clonado.
 
+### Configurando remotos
+
+#### **Adicionando um repositório remoto**
+
+ Utilize o comando ``remote`` junto com ``add`` para criar uma conexão entre o repositório local e um repositório remoto. O exemplo a seguir adiciona uma conexão para a URL informada e nomeia-a como *origin*.
+
+```
+git remote add origin https://github.com/fulano/repo-git.git
+```
