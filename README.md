@@ -447,3 +447,11 @@ Para excluir a conexão com um repositório remoto utilize o comando ``remote`` 
 ```
 git remote remove origin
 ```
+
+#### **Visualizando os repositórios remotos**
+
+Para listar todos os repositórios remotos salvos utilize apenas o comando ``remote``.
+
+```
+git remote
+```
