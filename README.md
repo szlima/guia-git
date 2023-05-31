@@ -439,3 +439,11 @@ Quando um projeto é carregado via ``git clone``, cria-se automaticamente um rem
 ```
 git remote add origin https://github.com/fulano/repo-git.git
 ```
+
+#### **Removendo um repositório remoto**
+
+Para excluir a conexão com um repositório remoto utilize o comando ``remote`` com ``remove``, além do nome do remoto.
+
+```
+git remote remove origin
+```
