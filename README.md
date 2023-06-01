@@ -455,3 +455,11 @@ Para listar todos os repositórios remotos salvos utilize apenas o comando ``rem
 ```
 git remote
 ```
+
+#### **Visualizando o endereço de um repositório remoto**
+
+Para visualizar a URL de um repositório remoto utilize o comando ``remote`` com ``get-url``, especificando o nome do remoto.
+
+```
+git remote get-url origin
+```
