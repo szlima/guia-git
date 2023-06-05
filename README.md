@@ -463,3 +463,11 @@ Para visualizar a URL de um repositório remoto utilize o comando ``remote`` com
 ```
 git remote get-url origin
 ```
+
+#### **Trocando o endereço de um repositório remoto**
+
+Para alterar a URL de um repositório remoto utilize o comando ``remote`` com ``set-url``, especificando o nome do remoto e o novo endereço.
+
+```
+git remote set-url origin https://github.com/fulano/repo-git.git
+```
