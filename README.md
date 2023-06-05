@@ -471,3 +471,40 @@ Para alterar a URL de um repositório remoto utilize o comando ``remote`` com ``
 ```
 git remote set-url origin https://github.com/fulano/repo-git.git
 ```
+
+### Interagindo com remotos
+
+#### **Enviando alterações**
+
+* Para enviar *branch(es)* atualizada(s) para o repositório remoto, especifique seu(s) nome(s) e utilize o comando ``push``. Os exemplos a seguir mostram envios para o repositório remoto *origin*.
+
+```
+git push origin main
+```
+```
+git push origin ramo_1 main
+```
+
+* Para já deixar configurada a conexão remota de *branches* locais, utilize a *flag* ``-u`` ou ``--set-upstream``. Nos *pushes* seguintes será possível enviar a *branch* selecionada sem especificar seu nome nem seu remoto correspondente.
+
+```
+git push -u origin main
+```
+```
+git push --set-upstream origin main
+```
+```
+git push -u origin main ramo_1
+```
+```
+git push --set-upstream origin main ramo_1
+```
+```
+git push //execução do push p/ branch selecionada após algum dos usos acima
+```
+
+* Para enviar todas as *branches* atualizadas para o remoto, utilize o parâmetro ``--all``.
+
+```
+git push --all
+```
