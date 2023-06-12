@@ -542,3 +542,27 @@ git fetch
 git fetch --all
 ```
 
+##### **Verificando e aplicando alterações**
+
+Após baixar as atualizações é possível verificar as mudanças acessando as *branches* remotas. Com o já conhecido comando ``branch`` liste todas as *branches* existentes. Utilize a flag ``-r`` para ver apenas as *branches* remotas ou ``-a`` para ver todas as *branches*, locais e remotas.
+
+```
+git branch -r
+```
+```
+git branch -a
+```
+
+Após ver a lista de *branches* disponíveis, verifique as atualizações de uma *branch* remota com o comando ``checkout``, basta especificar o remoto junto ao seu nome. 
+
+Por exemplo, considerando uma *branch* local main, sua versão num repositório remoto chamado *origin* seria origin/main. A seguir é apresentado como seria a seleção desta *branch* remota.
+
+```
+git checkout origin/main
+```
+
+Para comparar as diferenças pode-se executar o comando ``diff``.
+```
+git diff main origin/main
+```
+
