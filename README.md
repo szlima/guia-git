@@ -508,3 +508,37 @@ git push //execução do push p/ branch selecionada após algum dos usos acima
 ```
 git push --all
 ```
+
+#### **Recebendo alterações**
+
+O comando ``fetch`` baixa atualizações do repositório remoto, mas sem aplicá-las ao local. O repositório espelho do remoto que está na máquina local é atualizado em relação às suas referências remotas. Assim, é possível verificar o que há de novo antes de integrar à cópia em desenvolvimento.
+
+##### **Baixando alterações**
+
+* Para baixar atualizações de *branches* específicas, utilize ``fetch`` junto com o nome do remoto e o nome da(s) *branch(es)*.
+
+```
+git fetch origin ramo_1
+```
+```
+git fetch origin ramo_1 main
+```
+
+* Para baixar todas as atualizações de um repositório remoto, utilize ``fetch`` junto com o nome do remoto.
+
+```
+git fetch origin
+```
+
+Quando o nome do repositório não é especificado é feito um ``fetch`` do remoto configurado para a *branch* selecionada. Caso esta *branch* não esteja configurada o ``fetch`` vem do repositório padrão (normalmente é o *origin*).
+
+```
+git fetch 
+```
+
+* Para baixar todas as atualizações de todos os remotos registrados, utilize ``fetch`` junto com o parâmetro ``--all``.
+
+```
+git fetch --all
+```
+
