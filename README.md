@@ -566,3 +566,17 @@ Para comparar as diferenças pode-se executar o comando ``diff``.
 git diff main origin/main
 ```
 
+Para aplicar as atualizações localmente basta selecionar a *branch* local e executar um ``merge`` com a versão remota. No exemplo a seguir, estando a *branch* main selecionada, ocorre a sua mesclagem com a versão remota.
+
+```
+git merge origin/main
+```
+
+Pode-se criar uma *branch* a partir de uma remota caso ela não exista localmente. Nos exemplos a seguir, estando a *branch* remota selecionada, cria-se uma *branch* chamada ramo_1.
+
+```
+git branch ramo_1 // cria uma nova branch local a partir da remota selecionada
+```
+```
+git checkout -b ramo_1 //cria e seleciona a nova branch local
+```
