@@ -580,3 +580,60 @@ git branch ramo_1 // cria uma nova branch local a partir da remota selecionada
 ```
 git checkout -b ramo_1 //cria e seleciona a nova branch local
 ```
+
+#### **Recebendo e aplicando alterações**
+
+Anteriormente foi apresentado como receber atualizações remotas e aplica-las localmente. Existe, porém, um comando que já executa as duas ações de uma vez. 
+
+O comando ``pull`` é uma *shorthand* que corresponde a execução dos comandos ``fetch`` e ``merge``. Assim, ele baixa as atualizações remotas e aplica na *branch* local selecionada as modificações da sua referência remota.
+
+* Para baixar todas as atualizações de um repositório remoto e aplicar na *branch* selecionada o que está disponível na sua referência remota, utilize ``pull`` junto com o nome do remoto.
+
+```
+git pull origin
+```
+
+Considerando que a *branch* selecionada é a main e a sua referência remota é origin/main, o comando acima é equivalente aos comandos a seguir. Caso o remoto da *branch* selecionada fosse outro não seriam aplicadas atualizações.
+
+```
+git fetch origin
+git merge origin/main
+``` 
+
+Quando o nome do repositório não é especificado é feito um ``pull`` do remoto configurado para a *branch* selecionada. Caso esta *branch* não esteja configurada o ``pull`` vem do repositório padrão (normalmente é o *origin*).
+
+```
+git pull 
+```
+
+Para configurar um remoto para uma *branch* execute o comando a seguir. Consideramos, para exemplificar, a *branch* local como main, e o seu remoto como origin/main.
+
+```
+git branch --set-upstream-to=origin/main main
+```
+
+* Para baixar apenas as atualizações de uma *branch* específica e aplica-las na branch selecionada utilize o comando ``pull`` junto com o nome do remoto e o nome da *branch* específica.
+
+```
+git pull origin main
+```
+
+Considerando que a *branch* selecionada é a main e a sua referência remota é origin/main, o comando acima é equivalente aos comandos a seguir. É preciso atenção para qual *branch* está selecionada pois será realizado um merge dela com a versão remota especificada.
+
+```
+git fetch origin main
+git merge origin/main
+```
+
+* Para baixar todas as atualizações de todos os repositórios remotos registrados e aplicar na *branch* selecionada o que está disponível na sua referência remota, utilize ``pull`` junto com o parâmetro ``--all``.
+
+```
+git pull --all
+```
+
+Considerando que a *branch* selecionada é a main e a sua referência remota é origin/main, o comando acima é equivalente aos comandos a seguir.
+
+```
+git fetch --all
+git merge origin/main
+```
