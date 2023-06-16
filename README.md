@@ -637,3 +637,21 @@ Considerando que a *branch* selecionada é a main e a sua referência remota é 
 git fetch --all
 git merge origin/main
 ```
+
+### Procedimentos no GitHub
+
+#### **Solicitando aprovações**
+
+Uma solicitação de *pull*, ou um _**pull request**_ (PR), é um procedimento em que um membro da equipe notifica aos outros a conclusão de uma funcionalidade.
+
+Após enviar todo o seu conteúdo local para sua conta no GitHub, este membro solicita através dela a inclusão do que foi desenvolvido no código oficial. Assim, a *branch* que contém a funcionalidade terá seu conteúdo analisado. Caso sejam necessárias alterações há um ambiente para trocas de mensagens, onde as melhorias podem ser debatidas. Então, quando o(s) membro(s) responsável(is) finalizam a revisão e aprovam a funcionalidade, um *merge* desta *branch* com a principal é executado.
+
+O *pull request* possibilita um controle do que é incluido na *branch* principal do projeto, deste modo garante-se que lá haverão apenas tarefas concluídas. A seguir são apresentadas algumas nomenclaturas relacionadas a este procedimento.
+
+* *Reviewers*: Membros da equipe que receberão a solicitação de *pull*, revisarão o código e aprovarão o *merge* com a *branch* principal.
+
+* *Assignees*: Membros da equipe responsáveis pelo *pull request*. Exemplo: pode ser a pessoa que abriu o *pull request*.
+
+* *Labels*: Etiquetas sobre o assunto do *pull request*. Exemplos: *bug* e *enhancement*.
+
+Após uma solicitação de *pull request*, pode-se fazer outros *commits* na *branch*. Estes ainda serão integrados no PR já feito.
