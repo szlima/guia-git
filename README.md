@@ -655,3 +655,17 @@ O *pull request* possibilita um controle do que é incluido na *branch* principa
 * *Labels*: Etiquetas sobre o assunto do *pull request*. Exemplos: *bug* e *enhancement*.
 
 Após uma solicitação de *pull request*, pode-se fazer outros *commits* na *branch*. Estes ainda serão integrados no PR já feito.
+
+#### **Clonando projetos**
+
+O GitHub possibilita a clonagem de um repositório qualquer para sua própria conta através de um procedimento chamado *fork*. 
+
+Ao selecionar a opção *fork* no repositório desejado, ele é inteiramente copiado com todo o seu histórico. Desta forma, é possível realizar modificações separadamente em sua conta, sem afetar o projeto original.
+
+Com o *fork*, é possível contribuir em projetos de terceiros com menos riscos de alterações indevidas. Geralmente são executados os seguintes passos: 
+
+1. *Fork* do projeto para a conta pessoal
+2. Clonagem deste novo projeto para sua máquina local
+3. Execução das mudanças necessárias
+4. Envio das alterações para o repositório da sua conta no GitHub
+5. Realização de um *pull request* para que as mudanças sejam integradas no projeto original
