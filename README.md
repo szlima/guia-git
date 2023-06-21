@@ -430,6 +430,14 @@ A comunicação entre os repositórios local e remoto é feita através de uma c
 
 Quando um projeto é carregado via ``git clone``, cria-se automaticamente um remoto chamado *origin*, cuja conexão direciona para o repositório clonado.
 
+* **Os conceitos _upstream_ e _downstream_**
+
+Os termos *upstream* e *downstream* dizem respeito a repositórios. O gerenciamento do Git trabalha com o conceito de fluxo de registros de momentos específicos (*stream of snapshots*).
+
+*Upstream* equivale ao projeto de origem, à fonte. *Downstream* corresponde a um projeto que deriva do original. Este projeto derivado pode ser gerado através de um *fork* ou um *clone*, por exemplo. Desta forma, uma referência *upstream* dele poderia ser o remoto *origin*.
+
+Uma ação *upstream* representa um fluxo que vai no sentido da fonte. Assim como no conceito de *upload* seria algo que é inserido, como um *push*, por exemplo. Já uma ação *downstream* seria um fluxo que vem no sentido da fonte para o repositório derivado. Assim como no conceito de *download* seria algo que é baixado, como um *pull*, por exemplo.
+
 ### Configurando remotos
 
 #### **Adicionando um repositório remoto**
