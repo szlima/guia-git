@@ -1,5 +1,15 @@
 # Guia de Git/GitHub
 
+## Começando um repositório local
+
+### Começando do zero
+
+O comando a seguir inicializa um repositório Git vazio no respectivo diretório. Esta ação gera uma pasta invisível ``.git`` que permitirá o uso do sistema de versionamento.
+
+```
+git init
+```
+
 ## O gerenciamento do Git
 
 O Git gerencia e manipula o conteúdo do repositório local em três áreas diferentes, também conhecidas como três árvores: diretório de trabalho (*working directory*), área de *staging* (*index*) e histórico de *commits* (*HEAD*). Estas áreas são estruturas utilizadas para monitorar a linha do tempo das edições da *branch* selecionada. O Git registra os estados do projeto, manipulando as três árvores.
