@@ -10,6 +10,17 @@ O comando a seguir inicializa um repositório Git vazio no respectivo diretório
 git init
 ```
 
+### Partindo de um projeto já existente
+
+Com o comando ``clone``, um repositório já inicializado será clonado no respectivo diretório, assim a pasta invisível ``.git`` já terá sido criada. O local de onde vem o clone pode ser a URL de um repositório remoto ou o caminho de um diretório local.
+
+```
+git clone https://github.com/fulano/repo-git .
+```
+```
+git clone /home/fulano/pastaprojetooriginal .
+```
+
 ## O gerenciamento do Git
 
 O Git gerencia e manipula o conteúdo do repositório local em três áreas diferentes, também conhecidas como três árvores: diretório de trabalho (*working directory*), área de *staging* (*index*) e histórico de *commits* (*HEAD*). Estas áreas são estruturas utilizadas para monitorar a linha do tempo das edições da *branch* selecionada. O Git registra os estados do projeto, manipulando as três árvores.
