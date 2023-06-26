@@ -1,5 +1,9 @@
 # Guia de Git/GitHub
 
+Em 2005, Linus Torvalds criou um sistema de controle de versão chamado **Git**. Este mecanismo salva as alterações de um projeto ao longo do tempo sem sobrescrever as versões anteriores. Assim, o controle de versão possibilita o acompanhamento de mudanças, além da colaboração na codificação. Outros sistemas de controle de versão também conhecidos são o SVN e o CVS.
+
+O Git estabelece um repositório como uma estrutura para armazenar metadados de um conjunto de arquivos e pastas. São registrados o grupo de arquivos e o histórico de suas alterações. Cada projeto possui seu respectivo repositório, onde este é considerado a pasta que contém todos os dados relacionados a ele.
+
 ## Começando um repositório local
 
 ### Começando do zero
