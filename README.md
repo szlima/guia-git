@@ -1,4 +1,4 @@
-# Guia de Git/GitHub
+# :octocat: Guia de Git/GitHub
 
 Em 2005, Linus Torvalds criou um sistema de controle de versão chamado **Git**. Este mecanismo salva as alterações de um projeto ao longo do tempo sem sobrescrever as versões anteriores. Assim, o controle de versão possibilita o acompanhamento de mudanças, além da colaboração na codificação. Outros sistemas de controle de versão também conhecidos são o SVN e o CVS.
 
