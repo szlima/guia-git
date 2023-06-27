@@ -4,6 +4,8 @@ Em 2005, Linus Torvalds criou um sistema de controle de versão chamado **Git**.
 
 O Git estabelece um repositório como uma estrutura para armazenar metadados de um conjunto de arquivos e pastas. São registrados o grupo de arquivos e o histórico de suas alterações. Cada projeto possui seu respectivo repositório, onde este é considerado a pasta que contém todos os dados relacionados a ele.
 
+O **GitHub** é uma plataforma que hospeda códigos-fonte e arquivos utilizando o Git em seu gerenciamento. Ele funciona como um repositório à distância (remoto) para projetos locais. Além do GitHub existem outros serviços de hospedagem semelhantes, como o GitLab e o BitBucket.
+
 ## Começando um repositório local
 
 ### Começando do zero
