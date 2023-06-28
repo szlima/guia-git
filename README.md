@@ -704,3 +704,8 @@ Com o *fork*, é possível contribuir em projetos de terceiros com menos riscos 
 3. Execução das mudanças necessárias
 4. Envio das alterações para o repositório da sua conta no GitHub
 5. Realização de um *pull request* para que as mudanças sejam integradas no projeto original
+
+## Referências
+
+
+:star: Este guia te ajudou? Por favor, **deixe a sua estrela** aqui! :star:
