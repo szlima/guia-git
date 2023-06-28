@@ -708,6 +708,6 @@ Com o *fork*, é possível contribuir em projetos de terceiros com menos riscos 
 ## Referências
 
 
-:star: Este guia te ajudou? Por favor, **deixe a sua estrela** aqui! :star:
+:star: Este guia lhe ajudou? Por favor, **deixe a sua estrela** aqui! :star:
 
 :question: Algo parece confuso ou você tem dúvidas? Vamos conversar: [E-mail](mailto:suzanelima@outlook.com) e [Twitter](https://twitter.com/_szlima).
