@@ -707,6 +707,15 @@ Com o *fork*, é possível contribuir em projetos de terceiros com menos riscos 
 
 ## Referências
 
+* https://git-scm.com/book/pt-br/v2
+* https://petcomputacaoufrgs.github.io/intro-ao-git/
+* https://www.w3schools.com/git/
+* http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/pt_br/
+* https://www.atlassian.com/br/git/tutorials
+* https://github.com/git-guides
+* https://docs.github.com/pt/pull-requests
+* https://www.javatpoint.com/git
+* https://www.freecodecamp.org/news/how-to-fork-a-github-repository/
 
 :star: Este guia lhe ajudou? Por favor, **deixe a sua estrela** aqui! :star:
 
